@@ -9,6 +9,8 @@
 ## Table of Contents ##
 - [1.2. Equities](#12-equities)
     - [1.2.1. Dividends](#121-dividends)
+    - [1.2.2. Stock Splits](#122-stock-splits)
+- [1.3. Commodities](#13-commodities)
 
 
 ---
@@ -78,5 +80,36 @@ declaration date $\rightarrow$ cum-dividend $\rightarrow$ ex-date $\rightarrow$ 
 - **Sell on / after ex-date:** generally the buyer gets the share without that upcoming dividend.
 
 **Note:** Often capital gains due to the rise in a stock price are taxed differently from a dividend (which is often treated as income).
+
+
+
+### 1.2.2. Stock Splits ###
+
+A **stock split** is when a company divides its existing shares into a larger number of shares, increasing the total number of shares while decreasing the price per share proportionally.
+
+**Note:** The company's overall market value and the total value of an investor's holdings remain the same, as the value is simply divided among more shares. Companies often do this to make their stock more accessible and affordable to a wider range of investors.
+
+
+
+## 1.3. Commodities ##
+
+**Commodities** are basic raw materials or agricultural products that can be bought, sold and traded in large quantities.
+
+**Hard Commodities:** natural resources that are mined, drilled or extracted.<br> Generally non-renewable and durable with long shelf lives.
+
+|  Category  | Examples | What drives the price? |
+|------------|----------|------------------------|
+| Energy | Crude oil, Natural gas, Coal, Uranium | Global demand, production, conflicts, inventories, weather, geopolitics |
+| Precious metals | Gold, Silver, Platinum | Investment demand, interest rates, inflation, industrial demand |
+| Industrial metals | Copper, Aluminum, Zinc, Nickel, Iron, Palladium | Construction, manufacturing, global growth, supply |
+
+**Soft Commodities:** agricultural products and livestock that are cultivated or farmed.<br> Renewable yet perishable, seasonal and sensitive to short-term supply shifts
+
+|  Category  |     Examples     | What drives the price? |
+|------------|------------------|------------------------|
+| Agriculture | Wheat, Corn, Coffee, Cocoa, Cotton, Lumber, Rubber | Weather, harvest yields, inventories, demand, supply concentration, geopolitics, government regulation, market sentiment |
+| Livestock | Cattle, Poultry, Dairy | Feed costs, supply, demand, disease, government regulation |
+
+Most trading is done on the **futures market**, making deals to buy or sell the commodity at some time in the future.
 
 
