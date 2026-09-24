@@ -11,7 +11,8 @@
     - [1.2.1. Dividends](#121-dividends)
     - [1.2.2. Stock Splits](#122-stock-splits)
 - [1.3. Commodities](#13-commodities)
-
+- [1.4. Currencies](#14-currencies)
+- [1.5. Indices](#15-indices)
 
 ---
 
@@ -111,5 +112,75 @@ A **stock split** is when a company divides its existing shares into a larger nu
 | Livestock | Cattle, Poultry, Dairy | Feed costs, supply, demand, disease, government regulation |
 
 Most trading is done on the **futures market**, making deals to buy or sell the commodity at some time in the future.
+
+
+
+## 1.4. Currencies ##
+
+**Exchange rate:** the rate at which one currency can be exchanged for another.<br> **Foreign exchange (FX or Forex for short)** is the global market where one currency is exchanged for another.
+
+**Arbitrage profits** arise from exploiting temporary price differences for the same / highly correlated assets across different markets.<br> Strategy involves simultaneously buying the asset in the lower-priced market and selling it in the higher-priced market.
+
+
+
+## 1.5. Indices ##
+
+A typical **index** is made up from the weighted sum of a selection or basket of representative stocks.
+
+**Why are indices important?** <br> They are commonly used to:
+- Analyse market performance
+- Compare investment performance between a portfolio and an index
+- Track economic / market sentiment / direction
+- Provide investment products via funds and ETFs
+
+**Stock:** own a piece of a company.<br>
+**Index:** tracking a broad basket of companies.
+
+**Note:** you don't normally buy an index itself. You can instead buy an **index fund** or **ETF** designed to track it.
+
+There are several different types of financial indices. These include:
+
+### 1. Stock Market Indices ###
+
+These track shares of a company.
+
+|      Index      |     What it tracks     |
+|-----------------|------------------------|
+|      S&P 500    | 500 largest US companies |
+| Dow Jones (DJIA)| 30 major US companies |
+|    Nasdaq-100   | 100 largest non-financial Nasdaq-listed companies |
+|     FTSE 100    | 100 largest companies listed in the UK |
+|      DAX 40     | 40 largest German companies |
+|      CAC 40     | 40 largest French companies |
+|    Nikkei 225   | 225 largest Japanese companies |
+
+### 2. Bond Indices ###
+
+These track fixed-income securities.
+
+|      Index      |     What it tracks     |
+|-----------------|------------------------|
+|       EMBI+     | Total returns for USD-denominated external debt instruments issued by sovereign emerging market governments |
+|      GBI-EM     | Local-currency government bonds issued by developing economies |
+|      CEMBI      | USD-denominated corporate bonds issued by companies in emerging market countries |
+
+### 3. Commodities Indices ###
+
+These track groups of commodities.
+
+|      Index      |     What it tracks     |
+|-----------------|------------------------|
+|      S&P GSCI   | Performance of global commodity markets using exchange-traded future contracts. |
+|       BCOM      | Performance of future contracts on physical commodities across multiple global sectors |
+|       Gold      | Performance of gold mining companies, gold futures or market volatility rather than the physical metal itself |
+
+### 4. Currency / FX Indices ###
+
+These measure the value of a currency against a (weighted) basket of other foreign currencies.
+
+|      Index      |     What it tracks     |
+|-----------------|------------------------|
+|        DXY      | Measure the US dollar **(USD)** against a basket of major currencies.<br> (Euro **(EUR)** 57.6% weight, Japanese Yen **(JPY)** 13.6% weight, Pound Sterling **(GBP)** 11.9% weight, Canadian Dollar **(CAD)** 9.1% weight, Swedish Krona **(SEK)** 4.2% weight, Swiss Franc **(CHF)** 3.6% weight) |
+|  Euro Currency  | Measures the Euro against a basket of major global currencies |
 
 
