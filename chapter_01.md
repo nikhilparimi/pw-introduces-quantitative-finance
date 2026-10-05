@@ -13,6 +13,7 @@
 - [1.3. Commodities](#13-commodities)
 - [1.4. Currencies](#14-currencies)
 - [1.5. Indices](#15-indices)
+- [1.6. The Time Value Of Money](#16-the-time-value-of-money)
 
 ---
 
@@ -30,14 +31,14 @@
 
 **Stock exchange:** provide a structured and supervised marketplace for trading shares (stocks can be bought and sold freely).<br> **Examples:** London Stock Exchange, New York Stock Exchange, Nasdaq.
 
-**Why is a stock exchange useful for raising capital?** <br>
+**Why is a stock exchange useful for raising capital?**<br>
 This is because a liquid public market can make raising equity capital more **accessible** and potentially more **efficient**.<br> There are several reasons why:
 - **Large pool of investors:** a listed company can potentially access thousands or millions of investors through access to a much larger capital market.
 - **Liquidity:** investors are generally more willing to invest when they know there is an established market in which they can potentially sell their shares.
-- **Price discovery** the market continuously produces a share price based on buying and selling activity.
+- **Price discovery:** the market continuously produces a share price based on buying and selling activity.
 - **Ability to raise additional capital later:** being listed can provide a company with additional ways of raising equity capital in the future, e.g. initial listing $\rightarrow$ issue new shares $\rightarrow$ issue new shares $\rightarrow$ etc.
 
-**Initial Public Offering (IPO):** the process through which a company's shares are offered to investors as part of becoming publicly traded. Before an IPO, the company is usually privately owned (founders + private investors).
+**Initial Public Offering (IPO):** the process through which a company's shares are offered to investors as part of becoming **publicly traded**. Before an IPO, the company is usually **privately owned** (founders + private investors).
 
 Stock Prices have a large amount of **randomness** and modelling must be done in a **probabilistic** sense. This is because the situation lies somewhere between **complete predictability** and **perfect randomness**.
 
@@ -65,13 +66,13 @@ Coin toss to simulate the randomness of a stock price:
 - **cum-dividend** (comes with dividend): share is trading with the right to receive the upcoming dividend.
 - **ex-dividend** (excludes dividend): share is trading without the right to receive the upcoming dividend.
 
-**Why do share prices fall on the ex-dividend date?** <br>
+**Why do share prices fall on the ex-dividend date?**<br>
 The share price drops by the exact amount of the dividend on the **ex-date** rather than on the **payment date** for a few reasons:
 1. **Value leaves the company:** a dividend is a cash payment taken directly out of the company's assets and given to shareholders.
 2. **Lower company value:** as the company has less cash, the total value of the business goes down by that same amount.
 3. **No free money:** new buyers purchase the stock without the right to collect that specific dividend (ex-dividend), so they pay a lower price.
 
-**Timeline:** <br>
+**Timeline:**<br>
 declaration date $\rightarrow$ cum-dividend $\rightarrow$ ex-date $\rightarrow$ ex-dividend $\rightarrow$ record date $\rightarrow$ payment date $\rightarrow$ declaration date
 
 **Entitlement to dividend:**
@@ -88,7 +89,7 @@ declaration date $\rightarrow$ cum-dividend $\rightarrow$ ex-date $\rightarrow$ 
 
 A **stock split** is when a company divides its existing shares into a larger number of shares, increasing the total number of shares while decreasing the price per share proportionally.
 
-**Note:** The company's overall market value and the total value of an investor's holdings remain the same, as the value is simply divided among more shares. Companies often do this to make their stock more accessible and affordable to a wider range of investors.
+**Note:** The company's overall market value and the total value of an investor's holdings remain the same, as the value is simply divided among more shares. Companies often do this to make their stock more **accessible** and **affordable** to a wider range of investors.
 
 
 
@@ -104,7 +105,7 @@ A **stock split** is when a company divides its existing shares into a larger nu
 | Precious metals | Gold, Silver, Platinum | Investment demand, interest rates, inflation, industrial demand |
 | Industrial metals | Copper, Aluminum, Zinc, Nickel, Iron, Palladium | Construction, manufacturing, global growth, supply |
 
-**Soft Commodities:** agricultural products and livestock that are cultivated or farmed.<br> Renewable yet perishable, seasonal and sensitive to short-term supply shifts
+**Soft Commodities:** agricultural products and livestock that are cultivated or farmed.<br> Renewable yet perishable, seasonal and sensitive to short-term supply shifts.
 
 |  Category  |     Examples     | What drives the price? |
 |------------|------------------|------------------------|
@@ -127,7 +128,8 @@ Most trading is done on the **futures market**, making deals to buy or sell the 
 
 A typical **index** is made up from the weighted sum of a selection or basket of representative stocks.
 
-**Why are indices important?** <br> They are commonly used to:
+**Why are indices important?**<br>
+They are commonly used to:
 - Analyse market performance
 - Compare investment performance between a portfolio and an index
 - Track economic / market sentiment / direction
@@ -181,6 +183,156 @@ These measure the value of a currency against a (weighted) basket of other forei
 |      Index      |     What it tracks     |
 |-----------------|------------------------|
 |        DXY      | Measure the US dollar **(USD)** against a basket of major currencies.<br> (Euro **(EUR)** 57.6% weight, Japanese Yen **(JPY)** 13.6% weight, Pound Sterling **(GBP)** 11.9% weight, Canadian Dollar **(CAD)** 9.1% weight, Swedish Krona **(SEK)** 4.2% weight, Swiss Franc **(CHF)** 3.6% weight) |
-|  Euro Currency  | Measures the Euro against a basket of major global currencies |
+|  Euro Currency  | Measures the Euro **(EUR)** against a basket of major global currencies |
+
+
+
+## 1.6. The Time Value Of Money ##
+
+$1 today is worth more than $1 in a year's time.
+
+Banks borrow your money & reinvest it in various risky ways, but by spreading their risk over many investments they reduce their overall risk.
+ 
+Free markets and the ability to **quickly** and **cheaply** change banks ensure that interest rates are fairly consistent from one bank to another.
+
+**Definitions:**
+- $A:$ Final amount
+- $P:$ Initial amount (Principal)
+- $r:$ Interest rate
+- $t:$ Time
+
+**Simple Interest:** interest is calculated only on the initial amount.
+
+$$ A = P(1 + rt) $$
+
+**Compound Interest:** interest is calculated on the initial amount plus previously earned interest.
+
+$$ A = P(1 + r)^t $$
+
+**Discretely Compounded:** interest is added at specific intervals (e.g. annually, quarterly, monthly, etc...).
+
+$$ A = P \left ( 1 + \frac{r}{m} \right )^{mt} $$
+
+**Where:**
+- $m:$ number of interest payments per time period
+- $\frac{r}{m}:$ interest rate per time period
+
+**Continuously Compounded:** interest is added continuously, at every instant.
+
+$$ A = Pe^{rt} $$
+
+**Lemma:**
+
+$$ \lim_{m \to \infty} \left ( 1 + \frac{r}{m} \right )^{mt} = e^{rt} $$
+
+**Proof:**
+
+Let us isolate the interest gained over 1 time period $ : \; \left ( 1 + \frac{r}{m} \right )^m$<br>
+Continuously paid interest over 1 time period $ : \; \lim_{m \to \infty} \left ( 1 + \frac{r}{m} \right )^m \; = \; e^r $
+
+**Sub-Proof:**
+
+Recall that: $ \; \lim_{n \to \infty} \left ( 1 + \frac{1}{n} \right )^{n} = e $
+
+Let $ \; \frac{1}{n} = \frac{r}{m} \implies n = \frac{m}{r} \implies m = nr \; $ and as $ \; \substack{n \to \infty \\ m \to \infty} $ so we can replace the limits directly.
+
+$$ \therefore \quad \lim_{m \to \infty} \left ( 1 + \frac{r}{m} \right )^m = \lim_{n \to \infty} \left ( 1 + \frac{1}{n} \right )^{nr} = \lim_{n \to \infty} \Biggl ( \left ( 1 + \frac{1}{n} \right )^n \Biggr )^r = L $$
+
+$ L = e^r \leftarrow $ interest gained after 1 time period if continuously compounded.
+
+After time $t$ time periods we have $  L^t = e^{rt} $<br>
+**Hence:** $ A = Pe^{rt} $
+
+Another way of deriving the result above is via a **differential equation**.
+
+**Definitions:**
+- $M:$ Amount
+- $t:$ Time
+- $M(t):$ Amount at time $t$
+- $\frac{dM}{dt}:$ Rate at which the amount is changing
+
+$$\frac{dM}{dt} = \frac{M(t+dt) - M(t)}{(t+dt) - t} = \frac{M(t+dt) - M(t)}{dt} $$
+
+First, recall the **Taylor series expansion**.
+
+The **Taylor series** expansion allows you to approximate a function as an infinite sum of simple polynomial terms. The series is built around a specific starting point, i.e. where $ x = a : $
+
+$$
+\begin{align*}
+f(x) &= f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f^2(a)}{2!}(x-a)^2 + \dotsb \\
+f(x) &= \lim_{n \to \infty} \sum_{k=0}^{n} \frac{f^{(k)}(a)}{k!}(x - a)^k
+\end{align*}
+$$
+
+The **Maclaurin series** expansion is a special case of the **Taylor series** expansion where $ a = 0 : $
+
+$$
+\begin{align*}
+f(x) &= f(0) + \frac{f'(0)}{1!}x + \frac{f^2(0)}{2!}x^2 + \dotsb \\
+f(x) &= \lim_{n \to \infty} \sum_{k=0}^{n} \frac{f^{(k)}(0)}{k!}x^k
+\end{align*}
+$$
+
+**Goal:** We want to expand $M(t+dt)$ around the point $t$
+
+$$
+\begin{align*}
+f(x) &\longrightarrow M(t+dt) \\
+a &\longrightarrow t \\
+x &\longrightarrow t+dt \\
+\therefore \quad x - a &\longrightarrow (t+dt) - t = dt 
+\end{align*}
+$$
+
+Applying the **Taylor series** expansion with this substitution:
+
+$$
+\begin{align*}
+f(x) &\approx f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f^2(a)}{2!}(x-a)^2 + \dotsb \\
+M(t+dt) &\approx M(t) + \frac{M'(t)}{1!}dt + \frac{M^2(t)}{2!}(dt)^2 + \dotsb \\
+M(t+dt) - M(t) &\approx M'(t) \cdot dt \\
+\text{where} &\phantom{\approx} M'(t) = \frac{dM}{dt}
+\end{align*}
+$$
+
+We can exclude the latter terms as they are infinitesimally small and negligible as $dt \to 0$.<br>
+Consequently we have derived $ \Delta M = M(t+dt) - M(t) = \frac{dM}{dt}dt $
+
+We also have that the interest received ($\Delta M$) must be proportional to the: amount $M$, the interest rate $r$ and the time step $dt$:
+
+$$
+\begin{align*}
+\implies \Delta M &\propto M(t) \cdot r \cdot dt \\
+\implies \Delta M &= M(t) \cdot r \cdot dt &\text{where the constant of proportionality } = 1 \\
+\implies \frac{dM}{dt}dt &= M(t) \cdot r \cdot dt \\
+\implies \frac{dM}{dt} &= M(t) \cdot r
+\end{align*}
+$$
+
+Solving the differential equation:
+
+$$
+\begin{align*}
+\int \frac{1}{M} \, dM &= \int r \, dt \\
+\implies \quad \ln|M| &= rt + \ln(k) \\
+\implies M(t) &= ke^{rt} \\
+\text{finding the constant of integration } k \text{ at } t=0: \\
+\implies M(0) &= ke^{r(0)} \\
+\implies M(0) &= k \\
+\implies M(t) &= M(0)e^{rt}
+\end{align*}
+$$
+
+**Growth factor:** the number you multiply the **present** value by to find its **future** value.
+
+$$ FV = PV \; \times \underbrace{e^{r(T-t)}}_{\text{Growth factor}} $$
+
+**Discount factor:** the number you multiply a **future** value by to find its **present** value 
+
+$$ PV = FV \; \times \underbrace{e^{-r(T-t)}}_{\text{Discount factor}} $$
+
+**Where:**
+- $PV:$ Present Value
+- $FV:$ Future Value
 
 
