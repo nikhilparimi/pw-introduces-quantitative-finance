@@ -227,21 +227,21 @@ $$ \lim_{m \to \infty} \left ( 1 + \frac{r}{m} \right )^{mt} = e^{rt} $$
 
 **Proof:**
 
-Let us isolate the interest gained over 1 time period $ : \; \left ( 1 + \frac{r}{m} \right )^m$<br>
-Continuously paid interest over 1 time period $ : \; \lim_{m \to \infty} \left ( 1 + \frac{r}{m} \right )^m \; = \; e^r $
+Let us isolate the interest gained over 1 time period $: \; \left ( 1 + \frac{r}{m} \right )^m$<br>
+Continuously paid interest over 1 time period $: \; \lim_{m \to \infty} \left ( 1 + \frac{r}{m} \right )^m \; = \; e^r $
 
 **Sub-Proof:**
 
-Recall that: $ \; \lim_{n \to \infty} \left ( 1 + \frac{1}{n} \right )^{n} = e $
+Recall that: $\; \lim_{n \to \infty} \left ( 1 + \frac{1}{n} \right )^{n} = e$
 
-Let $ \; \frac{1}{n} = \frac{r}{m} \implies n = \frac{m}{r} \implies m = nr \; $ and as $ \; \substack{n \to \infty \\ m \to \infty} $ so we can replace the limits directly.
+Let $\; \frac{1}{n} = \frac{r}{m} \implies n = \frac{m}{r} \implies m = nr \;$ and as $\; \substack{n \to \infty \\ m \to \infty}$ so we can replace the limits directly.
 
 $$ \therefore \quad \lim_{m \to \infty} \left ( 1 + \frac{r}{m} \right )^m = \lim_{n \to \infty} \left ( 1 + \frac{1}{n} \right )^{nr} = \lim_{n \to \infty} \Biggl ( \left ( 1 + \frac{1}{n} \right )^n \Biggr )^r = L $$
 
-$ L = e^r \leftarrow $ interest gained after 1 time period if continuously compounded.
+$L = e^r \leftarrow$ interest gained after 1 time period if continuously compounded.
 
-After time $t$ time periods we have $  L^t = e^{rt} $<br>
-**Hence:** $ A = Pe^{rt} $
+After time $t$ time periods we have $L^t = e^{rt}$<br>
+**Hence:** $A = Pe^{rt}$
 
 Another way of deriving the result above is via a **differential equation**.
 
@@ -255,7 +255,7 @@ $$\frac{dM}{dt} = \frac{M(t+dt) - M(t)}{(t+dt) - t} = \frac{M(t+dt) - M(t)}{dt} 
 
 First, recall the **Taylor series expansion**.
 
-The **Taylor series** expansion allows you to approximate a function as an infinite sum of simple polynomial terms. The series is built around a specific starting point, i.e. where $ x = a : $
+The **Taylor series** expansion allows you to approximate a function as an infinite sum of simple polynomial terms. The series is built around a specific starting point, i.e. where $x = a :$
 
 $$
 \begin{align*}
@@ -264,7 +264,7 @@ f(x) &= \lim_{n \to \infty} \sum_{k=0}^{n} \frac{f^{(k)}(a)}{k!}(x - a)^k
 \end{align*}
 $$
 
-The **Maclaurin series** expansion is a special case of the **Taylor series** expansion where $ a = 0 : $
+The **Maclaurin series** expansion is a special case of the **Taylor series** expansion where $a = 0 :$
 
 $$
 \begin{align*}
@@ -291,12 +291,12 @@ $$
 f(x) &\approx f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f^2(a)}{2!}(x-a)^2 + \dotsb \\
 M(t+dt) &\approx M(t) + \frac{M'(t)}{1!}dt + \frac{M^2(t)}{2!}(dt)^2 + \dotsb \\
 M(t+dt) - M(t) &\approx M'(t) \cdot dt \\
-\text{where} &\phantom{\approx} M'(t) = \frac{dM}{dt}
+&\text{where } M'(t) = \frac{dM}{dt}
 \end{align*}
 $$
 
 We can exclude the latter terms as they are infinitesimally small and negligible as $dt \to 0$.<br>
-Consequently we have derived $ \Delta M = M(t+dt) - M(t) = \frac{dM}{dt}dt $
+Consequently we have derived $\Delta M = M(t+dt) - M(t) = \frac{dM}{dt}dt$
 
 We also have that the interest received ($\Delta M$) must be proportional to the: amount $M$, the interest rate $r$ and the time step $dt$:
 
