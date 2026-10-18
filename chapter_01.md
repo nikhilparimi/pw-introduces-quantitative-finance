@@ -14,6 +14,7 @@
 - [1.4. Currencies](#14-currencies)
 - [1.5. Indices](#15-indices)
 - [1.6. The Time Value Of Money](#16-the-time-value-of-money)
+- [1.7. Fixed-Income Securities](#17-fixed-income-securities)
 
 ---
 
@@ -130,15 +131,15 @@ A typical **index** is made up from the weighted sum of a selection or basket of
 
 **Why are indices important?**<br>
 They are commonly used to:
-- Analyse market performance
-- Compare investment performance between a portfolio and an index
-- Track economic / market sentiment / direction
-- Provide investment products via funds and ETFs
+- Analyse market performance.
+- Compare investment performance between a portfolio and an index.
+- Track economic / market sentiment / direction.
+- Provide investment products via funds and ETFs.
 
 **Stock:** own a piece of a company.<br>
 **Index:** tracking a broad basket of companies.
 
-**Note:** you don't normally buy an index itself. You can instead buy an **index fund** or **ETF** designed to track it.
+**Note:** You don't normally buy an index itself. You can instead buy an **index fund** or **ETF** designed to track it.
 
 There are several different types of financial indices. These include:
 
@@ -227,14 +228,14 @@ $$ \lim_{m \to \infty} \left ( 1 + \frac{r}{m} \right )^{mt} = e^{rt} $$
 
 **Proof:**
 
-Let us isolate the interest gained over 1 time period $: \; \left ( 1 + \frac{r}{m} \right )^m$<br>
-Continuously paid interest over 1 time period $: \; \lim_{m \to \infty} \left ( 1 + \frac{r}{m} \right )^m \; = \; e^r $
+Let us isolate the interest gained over 1 time period $: \ \left ( 1 + \frac{r}{m} \right )^m$<br>
+Continuously paid interest over 1 time period $: \ \lim_{m \to \infty} \left ( 1 + \frac{r}{m} \right )^m = e^r $
 
 **Sub-Proof:**
 
-Recall that: $\; \lim_{n \to \infty} \left ( 1 + \frac{1}{n} \right )^{n} = e$
+Recall that: $\ \lim_{n \to \infty} \left ( 1 + \frac{1}{n} \right )^{n} = e$
 
-Let $\; \frac{1}{n} = \frac{r}{m} \implies n = \frac{m}{r} \implies m = nr \;$ and as $\; \substack{n \to \infty \\ m \to \infty}$ so we can replace the limits directly.
+Let $\frac{1}{n} = \frac{r}{m} \implies n = \frac{m}{r} \implies m = nr$ and as $ \substack{n \to \infty \\ m \to \infty}$ hence we can replace the limits directly.
 
 $$ \therefore \quad \lim_{m \to \infty} \left ( 1 + \frac{r}{m} \right )^m = \lim_{n \to \infty} \left ( 1 + \frac{1}{n} \right )^{nr} = \lim_{n \to \infty} \Biggl ( \left ( 1 + \frac{1}{n} \right )^n \Biggr )^r = L $$
 
@@ -313,7 +314,7 @@ Solving the differential equation:
 
 $$
 \begin{align*}
-\int \frac{1}{M} \, dM &= \int r \, dt \\
+\int \frac{1}{M} \ dM &= \int r \ dt \\
 \implies \quad \ln|M| &= rt + \ln(k) \\
 \implies M(t) &= ke^{rt} \\
 \text{finding the constant of integration } k \text{ at } t=0: \\
@@ -325,14 +326,55 @@ $$
 
 **Growth factor:** the number you multiply the **present** value by to find its **future** value.
 
-$$ FV = PV \; \times \underbrace{e^{r(T-t)}}_{\text{Growth factor}} $$
+$$ FV = PV \ \times \underbrace{e^{r(T-t)}}_{\text{Growth factor}} $$
 
 **Discount factor:** the number you multiply a **future** value by to find its **present** value 
 
-$$ PV = FV \; \times \underbrace{e^{-r(T-t)}}_{\text{Discount factor}} $$
+$$ PV = FV \ \times \underbrace{e^{-r(T-t)}}_{\text{Discount factor}} $$
 
 **Where:**
 - $PV:$ Present Value
 - $FV:$ Future Value
+
+
+
+## 1.7. Fixed-Income Securities ##
+
+**Fixed-Income Security:** a financial instrument that allows an investor to lend money to a government, company or other issuer in exchange for payments according to agreed terms.
+
+A **bond** is a financial loan made to a government, municipality or corporation.
+
+A **coupon-bearing bond** is a **bond** that pays periodic interest **(coupon)** to the bondholder during its lifetime and then returns its full face value when it matures.
+
+**Key bond terminology:**
+- **Principal / Face Value:** the amount the issuer promises to repay at maturity.
+- **Maturity Date:** the date when the principal is due to be repaid.
+- **Coupon:** the interest payment received from the bond.
+- **Coupon Rate:** the annual interest rate on the bond's principal.
+
+**Examples by issuer:**
+- **Government:** Government bonds, Treasury bills
+- **Companies:** Corporate bonds
+- **Banks:** CDs, ABS, MBS
+- **Local Authorities:** Municipal bonds
+
+|        Fixed-Income Security     |     How it works     |
+|----------------------------------|----------------------|
+|          Government bonds        | Governments borrow money from investors in exchange for regular interest payments and the return of the original investment when the bond expires |
+|           Treasury bills         | A short-term government debt, usually sold at a discount ( with respect to its maturity value) to raise money for public operations |
+|           Corporate bonds        | Companies borrow money from invest and typically pay interest at regular intervals |
+|   Certificates of Deposit (CDs)  | Fixed-term savings account offered by banks and credit unions that pays a guaranteed, fixed interest rate on a lump-sum deposit |
+|   Asset-Backed Securities (ABS)  | Financial bonds collateralised by a pooled group of underlying non-mortgage income-generating debt assets such as: car loans, student loans, credit card balances, equipment leases, etc. |
+| Mortgage-backed securities (MBS) | A specialised type of asset-backed security, backed by a pool of residential or commercial mortgages |
+|           Municipal bonds        | Debt securities issued by local governments to finance public infrastructure projects such as: schools, roads, hospitals, water systems, etc. |
+
+
+**Two types of interest payments:**
+- **Fixed:** an interest rate that remains constant throughout a set period.
+- **Floating:** an interest rate that periodically adjusts to reflect economic or financial conditions.
+
+An **interest rate swap** is a financial contract in which two parties agree to exchange interest payments, usually with one paying a fixed interest rate and the other paying a variable (floating) interest rate.
+
+**Note:** Bond prices are inversely correlated with interest rates: when interest rates go up, bond prices fall, and vice versa.
 
 
