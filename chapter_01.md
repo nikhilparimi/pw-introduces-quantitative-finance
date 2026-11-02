@@ -15,6 +15,7 @@
 - [1.5. Indices](#15-indices)
 - [1.6. The Time Value Of Money](#16-the-time-value-of-money)
 - [1.7. Fixed-Income Securities](#17-fixed-income-securities)
+- [1.8. Inflation-Proof Bonds](#18-inflation-proof-bonds)
 
 ---
 
@@ -235,7 +236,7 @@ Continuously paid interest over 1 time period $: \ \lim_{m \to \infty} \left ( 1
 
 Recall that: $\ \lim_{n \to \infty} \left ( 1 + \frac{1}{n} \right )^{n} = e$
 
-Let $\frac{1}{n} = \frac{r}{m} \implies n = \frac{m}{r} \implies m = nr$ and as $ \substack{n \to \infty \\ m \to \infty}$ hence we can replace the limits directly.
+Let $\frac{1}{n} = \frac{r}{m} \implies n = \frac{m}{r} \implies m = nr$ and as $\ \substack{n \to \infty \\ m \to \infty}$ hence we can replace the limits directly.
 
 $$ \therefore \quad \lim_{m \to \infty} \left ( 1 + \frac{r}{m} \right )^m = \lim_{n \to \infty} \left ( 1 + \frac{1}{n} \right )^{nr} = \lim_{n \to \infty} \Biggl ( \left ( 1 + \frac{1}{n} \right )^n \Biggr )^r = L $$
 
@@ -344,7 +345,7 @@ $$ PV = FV \ \times \underbrace{e^{-r(T-t)}}_{\text{Discount factor}} $$
 
 A **bond** is a financial loan made to a government, municipality or corporation.
 
-A **coupon-bearing bond** is a **bond** that pays periodic interest **(coupon)** to the bondholder during its lifetime and then returns its full face value when it matures.
+A **coupon-bearing bond** is a **bond** that pays periodic interest **(coupon)** to the bondholder during its lifetime and then returns its full face value when it **matures**.
 
 **Key bond terminology:**
 - **Principal / Face Value:** the amount the issuer promises to repay at maturity.
@@ -375,6 +376,34 @@ A **coupon-bearing bond** is a **bond** that pays periodic interest **(coupon)**
 
 An **interest rate swap** is a financial contract in which two parties agree to exchange interest payments, usually with one paying a fixed interest rate and the other paying a variable (floating) interest rate.
 
-**Note:** Bond prices are inversely correlated with interest rates: when interest rates go up, bond prices fall, and vice versa.
+**Note:** Bond prices are inversely correlated with interest rates: when interest rates go up, bond prices fall and vice versa.
+
+
+
+## 1.8. Inflation-Proof Bonds ##
+
+**Index-linked / Inflation-proof bonds**: have been around in the UK since 1981 and are investments designed to protect  / ensure that income is not eroded by inflation.
+
+**With a conventional bond:**
+- A fixed interest payment (coupon) is received.
+- The original investment is repaid at maturity.
+- Inflation reduces the purchasing power of the money received.
+
+**With an inflation-proof bond:**
+- The interest payments are adjusted in line with inflation.
+- The amount repaid at maturity is also adjusted for inflation (dependent on the bond's structure).
+- Helps protect the real value of the investment.
+
+**Capital-indexed bonds:** both the original investment (principal) and interest payments are adjusted in line with inflation.
+
+**Interest-only adjusted bonds:** interest payments are adjusted in line with inflation but the principal remains unchanged.
+
+In the UK, inflation has traditionally been measured using the **Retail Price Index (RPI)**. It measures year-on-year inflation by tracking changed in the prices of a representative "basket" of goods and services. These include: food, groceries, clothing, housing costs, transport, recreation, etc. The index is published monthly and is used to determine the coupon payments and principal repayments of the corresponding index-linked bonds.
+
+The **Consumer Price Index (CPI)** provides an alternative measure of inflation and is the main measure of consumer price inflation in both the UK and the US. The CPI excludes certain costs included in RPI, notably mortgage interest payments and council tax.
+
+Interest rates have an important relationship with inflation:
+1. Changes in interest rates can directly affect mortgage repayments (which are included in RPI but excluded from CPI). 
+2. Central banks can use interest rates as a monetary policy tool to influence borrowing and spending, helping control inflation.
 
 
