@@ -13,9 +13,11 @@
 - [1.3. Commodities](#13-commodities)
 - [1.4. Currencies](#14-currencies)
 - [1.5. Indices](#15-indices)
-- [1.6. The Time Value Of Money](#16-the-time-value-of-money)
+- [1.6. The Time Value of Money](#16-the-time-value-of-money)
 - [1.7. Fixed-Income Securities](#17-fixed-income-securities)
 - [1.8. Inflation-Proof Bonds](#18-inflation-proof-bonds)
+- [1.9. Forwards And Futures](#19-forwards-and-futures)
+    - [1.9.1. The No-Arbitrage Principle](#191-the-no-arbitrage-principle)
 
 ---
 
@@ -189,7 +191,7 @@ These measure the value of a currency against a (weighted) basket of other forei
 
 
 
-## 1.6. The Time Value Of Money ##
+## 1.6. The Time Value of Money ##
 
 $1 today is worth more than $1 in a year's time.
 
@@ -382,7 +384,7 @@ An **interest rate swap** is a financial contract in which two parties agree to 
 
 ## 1.8. Inflation-Proof Bonds ##
 
-**Index-linked / Inflation-proof bonds**: have been around in the UK since 1981 and are investments designed to protect  / ensure that income is not eroded by inflation.
+**Index-linked / Inflation-proof bonds**: have been around in the UK since 1981 and are investments designed to protect investors against inflation by linking their returns to changes in price level, ensuring that the purchasing power of both income and capital is maintained over time.
 
 **With a conventional bond:**
 - A fixed interest payment (coupon) is received.
@@ -398,12 +400,119 @@ An **interest rate swap** is a financial contract in which two parties agree to 
 
 **Interest-only adjusted bonds:** interest payments are adjusted in line with inflation but the principal remains unchanged.
 
-In the UK, inflation has traditionally been measured using the **Retail Price Index (RPI)**. It measures year-on-year inflation by tracking changed in the prices of a representative "basket" of goods and services. These include: food, groceries, clothing, housing costs, transport, recreation, etc. The index is published monthly and is used to determine the coupon payments and principal repayments of the corresponding index-linked bonds.
+In the UK, inflation has traditionally been measured using the **Retail Price Index (RPI)**. It measures year-on-year inflation by tracking changes in the prices of a representative "basket" of goods and services. These include: food, groceries, clothing, housing costs, transport, recreation, etc. The index is published monthly and is used to determine the coupon payments and principal repayments of the corresponding index-linked bonds.
 
 The **Consumer Price Index (CPI)** provides an alternative measure of inflation and is the main measure of consumer price inflation in both the UK and the US. The CPI excludes certain costs included in RPI, notably mortgage interest payments and council tax.
 
 Interest rates have an important relationship with inflation:
 1. Changes in interest rates can directly affect mortgage repayments (which are included in RPI but excluded from CPI). 
 2. Central banks can use interest rates as a monetary policy tool to influence borrowing and spending, helping control inflation.
+
+
+
+## 1.9. Forwards and Futures ##
+
+**Forwards** and **futures** are **financial derivatives**.
+
+**Financial derivatives:** financial contracts whose value is derived from the price or performance of an underlying asset such as oil, gold, shares or foreign currency.
+
+**Forward contract:** a private agreement between two parties to buy or sell an asset at an agreed price on a specific future date.
+- The price is set at the time that the forward contract is entered into.
+- The transaction takes place on a future date (**delivery date** / **maturity** of contract).
+- Contracts are customised to suit the two parties.
+- They are traded over-the-counter (OTC), rather than on the exchange.
+
+**Futures contract:** similar to a forward contract except that it is standardised  and traded on an organised exchange.
+- The price is set at the time that the futures contract is entered into.
+- The contract has a specified delivery or settlement date.
+- Gains and losses are usually settled daily through a process known as **Marking-to-Market (MTM)**.
+- Contract sizes and terms are standardised.
+- They are regulated and managed through an exchange.
+
+**Note:** Futures and forwards typically have zero initial contract value as they require no net initial investment.
+
+**Key terminology:**
+- **Delivery date:** the agreed future date when the underlying asset must be delivered / the contract is financially settled.
+- **Maturity:** the date when the contract expires and the obligations are settled.
+- **Forward price:** the price agreed in the present for buying or selling the asset at a specified future date.
+- **Futures price:** the exchange-traded price agreed for a futures contract.
+- **Zero initial contract value:** The derivative has no value at the time the contract is established.
+- **Zero net initial investment:** The overall strategy requires no net upfront payment.
+
+There are two main uses of forward and futures contracts:
+
+**A. Speculation**<br>
+Speculation involves using derivatives to make a profit from expected changes in market price. Investors take positions based on whether they believe prices will rise or fall:
+- **Long position (buy):** buying an asset or entering a contract in anticipation of a price increase.
+    - Generates a profit from rising prices and a loss from falling prices.
+- **Short position (sell):** selling an asset or entering a contract in anticipation of a price decrease.
+    - Generates a profit from falling prices and a loss from rising prices.
+
+**B. Hedging**<br>
+Hedging involves using derivatives to reduce the risk of losses caused by future price movements. Businesses use forwards and futures to protect themselves against uncertainty.
+
+
+
+### 1.9.1. The No-Arbitrage Principle ###
+
+**No-arbitrage:** you cannot make a risk-free profit with no net initial investment.
+
+**Law of one price:** identical assets with identical future cash flows must have the same price.
+
+A more general no-arbitrage equation:
+
+$$ V_0 = \sum_{t=1}^T \frac{CF_t}{(1+r)^t} $$
+
+**Where:**
+- $V_0:$ current value of the asset
+- $CF_t:$ expected cash flow at time $t$
+- $r:$ appropriate discount rate
+- $t:$ time period
+- $T:$ total number of time periods
+
+In other words, the current value of an asset ($V_0$) is equal to the sum of all its expected future cash flows ($CF_t$), discounted using a discount rate ($r$).
+
+**More definitions:**
+- $t:$ the present date
+- $S(t):$ the present value of the asset (**spot price**)
+- $F:$ final settlement at maturity / delivery date (**forward price**)
+- $T:$ contract expiry date
+- $S(T):$ future value of the asset at time $T$
+
+A forward contract entitles one to $S(T) - F$ at expiry (which is unknown). We can eliminate all randomness as follows:
+1. Enter into the forward contract.
+2. Simultaneously sell the asset (going short).
+    - We now have $S(T)$ in cash, a forward contract and a short asset position.
+3. Put the cash in a bank / investment to receive interest / appreciation respectively.
+4. At maturity we hand over $F$ and receive the asset which cancels the short asset position regardless of the value at $T$ ($S(T)$).
+    - Here we are left with a guaranteed $-F$ in cash as well as the money invested.
+
+A continuously  compounded initial investment ($S(t)$) has a value at maturity of:
+
+$$ S(t)e^{r(T-t)} $$
+
+The net position at maturity is therefore:
+
+$$ S(t)e^{r(T-t)} - F $$
+
+Since the initial portfolio value is zero and the final value is predictable, the predicted final value must also be zero. Thus, it follows that:
+
+$$ F = S(t)e^{r(T-t)} $$
+
+This is the relationship between the **spot price** ($S(t)$) and the **forward price** ($F$).
+
+Cashflows in a hedged portfolio of asset and forward:
+
+|   Holding  |  Worth today ($t$) |  Worth at maturity ($T$) |
+|------------|--------------------|------------------------|
+|   Forward  | $0$ | $S(T) - F$ |
+|  $-$ Stock | $S(T)$ | $-S(T)$ |
+|    Cash    | $S(T)$ | $S(T)e^{r(T-t)}$ |
+|    Total   | $0$ | $S(T)e^{r(T-t)} - F$ |
+
+**Long forward position:** agreeing to buy the asset at a future date for $F$.<br>
+**Short stock position:** borrow a stock, sell it immediately for $S(t)$ with the intention of buying it back at a future date for $S(T)$)
+
+**$-$ Stock:** short selling the stock.
 
 
