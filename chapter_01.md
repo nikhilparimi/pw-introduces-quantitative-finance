@@ -124,7 +124,9 @@ Most trading is done on the **futures market**, making deals to buy or sell the 
 
 **Exchange rate:** the rate at which one currency can be exchanged for another.<br> **Foreign exchange (FX or Forex for short)** is the global market where one currency is exchanged for another.
 
-**Arbitrage profits** arise from exploiting temporary price differences for the same / highly correlated assets across different markets.<br> Strategy involves simultaneously buying the asset in the lower-priced market and selling it in the higher-priced market.
+**Arbitrage profits** arise from exploiting temporary price differences for the same / highly correlated assets across different markets.
+
+Strategy involves simultaneously buying the asset in the lower-priced market and selling it in the higher-priced market.
 
 
 
@@ -136,7 +138,7 @@ A typical **index** is made up from the weighted sum of a selection or basket of
 They are commonly used to:
 - Analyse market performance.
 - Compare investment performance between a portfolio and an index.
-- Track economic / market sentiment / direction.
+- Gauge market sentiment / economic direction.
 - Provide investment products via funds and ETFs.
 
 **Stock:** own a piece of a company.<br>
@@ -364,8 +366,8 @@ A **coupon-bearing bond** is a **bond** that pays periodic interest **(coupon)**
 |        Fixed-Income Security     |     How it works     |
 |----------------------------------|----------------------|
 |          Government bonds        | Governments borrow money from investors in exchange for regular interest payments and the return of the original investment when the bond expires |
-|           Treasury bills         | A short-term government debt, usually sold at a discount ( with respect to its maturity value) to raise money for public operations |
-|           Corporate bonds        | Companies borrow money from invest and typically pay interest at regular intervals |
+|           Treasury bills         | A short-term government debt, usually sold at a discount (with respect to its maturity value) to raise money for public operations |
+|           Corporate bonds        | Companies borrow money from investors and typically pay interest at regular intervals |
 |   Certificates of Deposit (CDs)  | Fixed-term savings account offered by banks and credit unions that pays a guaranteed, fixed interest rate on a lump-sum deposit |
 |   Asset-Backed Securities (ABS)  | Financial bonds collateralised by a pooled group of underlying non-mortgage income-generating debt assets such as: car loans, student loans, credit card balances, equipment leases, etc. |
 | Mortgage-backed securities (MBS) | A specialised type of asset-backed security, backed by a pool of residential or commercial mortgages |
@@ -414,15 +416,15 @@ Interest rates have an important relationship with inflation:
 
 **Forwards** and **futures** are **financial derivatives**.
 
-**Financial derivatives:** financial contracts whose value is derived from the price or performance of an underlying asset such as oil, gold, shares or foreign currency.
+**Financial derivatives:** financial contracts whose value is derived from the price or performance of an underlying asset such as: shares, commodities, bonds or foreign currency.
 
 **Forward contract:** a private agreement between two parties to buy or sell an asset at an agreed price on a specific future date.
 - The price is set at the time that the forward contract is entered into.
 - The transaction takes place on a future date (**delivery date** / **maturity** of contract).
 - Contracts are customised to suit the two parties.
-- They are traded over-the-counter (OTC), rather than on the exchange.
+- They are traded over-the-counter (OTC), rather than on an exchange.
 
-**Futures contract:** similar to a forward contract except that it is standardised  and traded on an organised exchange.
+**Futures contract:** similar to a forward contract except that it is standardised and traded on an organised exchange.
 - The price is set at the time that the futures contract is entered into.
 - The contract has a specified delivery or settlement date.
 - Gains and losses are usually settled daily through a process known as **Marking-to-Market (MTM)**.
@@ -443,9 +445,9 @@ There are two main uses of forward and futures contracts:
 
 **A. Speculation**<br>
 Speculation involves using derivatives to make a profit from expected changes in market price. Investors take positions based on whether they believe prices will rise or fall:
-- **Long position (buy):** buying an asset or entering a contract in anticipation of a price increase.
+- **Long position (buy):** buying an asset $\longrightarrow$ enter a contract in anticipation of a price increase.
     - Generates a profit from rising prices and a loss from falling prices.
-- **Short position (sell):** selling an asset or entering a contract in anticipation of a price decrease.
+- **Short position (sell):** selling an asset $\longrightarrow$ enter a contract in anticipation of a price decrease.
     - Generates a profit from falling prices and a loss from rising prices.
 
 **B. Hedging**<br>
@@ -485,7 +487,7 @@ A forward contract entitles one to $S(T) - F$ at expiry (which is unknown). We c
     - We now have $S(T)$ in cash, a forward contract and a short asset position.
 3. Put the cash in a bank / investment to receive interest / appreciation respectively.
 4. At maturity we hand over $F$ and receive the asset which cancels the short asset position regardless of the value at $T$ ($S(T)$).
-    - Here we are left with a guaranteed $-F$ in cash as well as the money invested.
+    - Here, we are left with a guaranteed $-F$ in cash as well as the money invested.
 
 A continuously  compounded initial investment ($S(t)$) has a value at maturity of:
 
@@ -506,12 +508,12 @@ Cashflows in a hedged portfolio of asset and forward:
 |   Holding  |  Worth today ($t$) |  Worth at maturity ($T$) |
 |------------|--------------------|------------------------|
 |   Forward  | $0$ | $S(T) - F$ |
-|  $-$ Stock | $S(T)$ | $-S(T)$ |
-|    Cash    | $S(T)$ | $S(T)e^{r(T-t)}$ |
+|  $-$ Stock | $-S(t)$ | $-S(T)$ |
+|    Cash    | $S(t)$ | $S(T)e^{r(T-t)}$ |
 |    Total   | $0$ | $S(T)e^{r(T-t)} - F$ |
 
 **Long forward position:** agreeing to buy the asset at a future date for $F$.<br>
-**Short stock position:** borrow a stock, sell it immediately for $S(t)$ with the intention of buying it back at a future date for $S(T)$)
+**Short stock position:** borrow a stock, sell it immediately for $S(t)$ with the intention of buying it back at a future date for $S(T)$.
 
 **$-$ Stock:** short selling the stock.
 
